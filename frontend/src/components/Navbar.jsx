@@ -1,13 +1,15 @@
-function Navbar() {
-    return(
-        <div className="min-h-screen bg-gra-100">
-            <nav className="bg-blue-500 shadow-sm">
-                <div className="max-w-4xl mx-auto px-4 py-3">
+import { Link } from "react-router-dom";
 
-                </div>
-            </nav>
-        </div>
-    );
+function Navbar() {
+  return (
+    <nav className="flex bg-white shadow-sm my-5 mx-10 md:mx-30 rounded-xl">
+      <div className="mx-auto px-4 py-3">
+        <Link to="/" className="text-xl font-bold text-black">
+          WarungKu
+        </Link>
+      </div>
+    </nav>
+  );
 }
 
 export default Navbar;
