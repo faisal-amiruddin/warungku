@@ -2,6 +2,7 @@ import Navbar from './components/Navbar'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import TambahMenu from './pages/TambahMenu'
+import EditMenu from './pages/EditMenu'
 function App() {
   return (
     <>
@@ -11,6 +12,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/tambah" element={<TambahMenu />} />
+              <Route path="/edit/:id" element={<EditMenu />} />
             </Routes>
           </main>
       </Router>

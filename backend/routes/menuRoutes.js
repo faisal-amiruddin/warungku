@@ -113,7 +113,7 @@ router.put('/:id', async (req, res) => {
         if (req.body.nama) menu.nama = req.body.nama;
         if (req.body.kategori) menu.kategori = req.body.kategori;
         if (req.body.harga) menu.harga = req.body.harga;
-        if (req.body.tersedia) menu.tersedia = req.body.tersedia;
+        if (req.body.tersedia !== undefined) menu.tersedia = req.body.tersedia; 
         if (req.body.deskripsi) menu.deskripsi = req.body.deskripsi;
 
         const updateMenu = await menu.save();
