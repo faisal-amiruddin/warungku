@@ -138,7 +138,7 @@ function MenuForm({ initialData = null, onSubmit, isLoading = false }) {
           className="flex-1"
           isLoading={isLoading}
         >
-          {initialData ? '💾 Update Menu' : '✨ Simpan Menu'}
+          {initialData ? 'Update Menu' : 'Simpan Menu'}
         </Button>
       </div>
     </form>
